@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../css/estiloCadastro/estilo.css" media="screen" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <div class="box">
+            <h1 class="titulo">
+                  Cadastro da Prova 2
+            </h1>
+    <form action="cadastro_fluxo_caixa.php" method="post">
+        <div>
+            <label for="data">Data:</label>
+            <input type="date" name="data" id="data">
+        </div>
+        <div class="form-group">
+            <label for="tipo">Tipo:</label>
+            <input type="radio" name="tipo" value="Entrada"/> Entrada<br />
+            <input type="radio" name="tipo" value="saida"/> Saida<br />
+        </div>
+        <div>
+            <label for="valor">Valor:</label>
+            <input type="number" name="valor" id="valor" step=".01">
+        </div>
+        <div>
+            <label for="historico">Histórico:</label>
+            <input type="text" name="historico" id="historico">
+        </div>
+        <div>
+            <label for="cheque">Cheque:</label>
+            <select name="cheque">
+                <option value="sim" selected>Sim</option>
+                <option value="nao">Não</option>
+            </select>
+  
+            
+        </div>
+        
+        <input type="submit" value="Salvar">
+    </form>
+    
+</html>
